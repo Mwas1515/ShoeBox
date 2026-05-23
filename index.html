@@ -4,13 +4,135 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShoeBox|Home</title>
+
+    <!-- Tailwind CSS -->
+   
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- Font Awesome -->
+   
     <script
       src="https://kit.fontawesome.com/84ff9154d2.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body class="bg-gradient-to-br from-gray-800 to-black min-h-screen">
+    <!-- STAR FIELD BACKGROUND -->
+
+    <div
+      class="fixed inset-0 pointer-events-none overflow-hidden select-none -z-10"
+    >
+      <!-- SMALL STARS -->
+
+      <div
+        class="absolute top-8 left-8 w-1 h-1 bg-white rounded-full opacity-70"
+      ></div>
+
+      <div
+        class="absolute top-20 right-28 w-0.5 h-0.5 bg-white rounded-full opacity-60"
+      ></div>
+
+      <div
+        class="absolute top-44 left-20 w-1 h-1 bg-white rounded-full opacity-80"
+      ></div>
+
+      <div
+        class="absolute top-52 right-12 w-0.5 h-0.5 bg-white rounded-full opacity-70"
+      ></div>
+
+      <div
+        class="absolute top-72 left-36 w-1 h-1 bg-white rounded-full opacity-70"
+      ></div>
+
+      <div
+        class="absolute top-96 right-36 w-0.5 h-0.5 bg-white rounded-full opacity-60"
+      ></div>
+
+      <div
+        class="absolute top-[400px] left-10 w-1 h-1 bg-white rounded-full opacity-80"
+      ></div>
+
+      <div
+        class="absolute top-[420px] right-16 w-0.5 h-0.5 bg-white rounded-full opacity-50"
+      ></div>
+
+      <div
+        class="absolute top-[480px] left-28 w-1 h-1 bg-white rounded-full opacity-75"
+      ></div>
+
+      <div
+        class="absolute top-[530px] right-32 w-1 h-1 bg-white rounded-full opacity-80"
+      ></div>
+
+      <div
+        class="absolute top-[590px] left-16 w-0.5 h-0.5 bg-white rounded-full opacity-60"
+      ></div>
+
+      <div
+        class="absolute bottom-12 left-24 w-1 h-1 bg-white rounded-full opacity-75"
+      ></div>
+
+      <div
+        class="absolute bottom-24 right-14 w-1 h-1 bg-white rounded-full opacity-80"
+      ></div>
+
+      <div
+        class="absolute bottom-40 left-12 w-0.5 h-0.5 bg-white rounded-full opacity-60"
+      ></div>
+
+      <div
+        class="absolute bottom-56 right-24 w-1 h-1 bg-white rounded-full opacity-70"
+      ></div>
+
+      <div
+        class="absolute bottom-72 left-32 w-0.5 h-0.5 bg-white rounded-full opacity-80"
+      ></div>
+
+      <!-- GLOWING STARS -->
+
+      <div
+        class="absolute top-16 right-10 w-1.5 h-1.5 bg-white rounded-full opacity-90 shadow-[0_0_8px_2px_rgba(255,255,255,0.7)]"
+      ></div>
+
+      <div
+        class="absolute top-32 left-14 w-1.5 h-1.5 bg-white rounded-full opacity-90 shadow-[0_0_8px_2px_rgba(255,255,255,0.7)]"
+      ></div>
+
+      <div
+        class="absolute top-80 right-20 w-1.5 h-1.5 bg-white rounded-full opacity-90 shadow-[0_0_8px_2px_rgba(255,255,255,0.7)]"
+      ></div>
+
+      <div
+        class="absolute top-[460px] right-8 w-1.5 h-1.5 bg-white rounded-full opacity-95 shadow-[0_0_8px_2px_rgba(255,255,255,0.7)]"
+      ></div>
+
+      <div
+        class="absolute bottom-32 left-8 w-1.5 h-1.5 bg-white rounded-full opacity-90 shadow-[0_0_8px_2px_rgba(255,255,255,0.7)]"
+      ></div>
+
+      <div
+        class="absolute bottom-64 right-12 w-1.5 h-1.5 bg-white rounded-full opacity-95 shadow-[0_0_8px_2px_rgba(255,255,255,0.7)]"
+      ></div>
+
+      <!-- PULSING STARS -->
+
+      <div
+        class="absolute top-24 left-44 w-1.5 h-1.5 bg-white rounded-full opacity-100 animate-pulse shadow-[0_0_10px_3px_rgba(255,255,255,0.8)]"
+      ></div>
+
+      <div
+        class="absolute top-[350px] left-24 w-1 h-1 bg-white rounded-full opacity-90 animate-pulse shadow-[0_0_6px_2px_rgba(255,255,255,0.5)]"
+      ></div>
+
+      <div
+        class="absolute bottom-16 left-40 w-1.5 h-1.5 bg-white rounded-full opacity-100 animate-pulse shadow-[0_0_10px_3px_rgba(255,255,255,0.8)]"
+      ></div>
+
+      <div
+        class="absolute bottom-48 right-28 w-1 h-1 bg-white rounded-full opacity-90 animate-pulse shadow-[0_0_6px_2px_rgba(255,255,255,0.5)]"
+      ></div>
+    </div>
+
     <!--NAVIGATION BAR-->
     <div>
       <nav
@@ -64,7 +186,7 @@
       class="mt-16 bg-white/10 backdrop-blur-md border-t border-white/20 text-white px-6 py-10 rounded-t-[40px]"
     >
       <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-
+       
         <!-- ABOUT -->
 
         <div>
@@ -114,7 +236,7 @@
           <div class="flex items-center gap-3 text-gray-300 mb-8">
             <i class="fa-solid fa-location-dot"></i>
 
-            <p>Embakisi Imara-daima, Nairobi, Kenya</p>
+            <p>Embakisi Imara-Daima, Nairobi, Kenya</p>
           </div>
 
           <!-- SOCIAL MEDIA -->
