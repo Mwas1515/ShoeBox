@@ -34,8 +34,6 @@ The project showcases stylish sneaker collections with a responsive ecommerce-in
 
 ## Shopping Cart Functionality
 - Add-to-cart buttons
-- Cart item counter
-- LocalStorage support for saved cart items
 
 ## Product Preview Popup
 - Clickable shoe images
@@ -58,9 +56,7 @@ Optimized for:
 
 - HTML5
 - Tailwind CSS
-- JavaScript
 - Font Awesome Icons
-
 ---
 
 # Project Structure
