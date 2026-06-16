@@ -1,0 +1,24 @@
+{
+  "name": "shoebox",
+  "version": "1.0.0",
+  "description": "ShoeBox is a modern sneaker store platform created for sneaker lovers who want a smooth and stylish shopping experience. The website showcases a wide range of trendy sneakers across different categories including men, women, and kids collections.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mwas1515/ShoeBox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Mwas1515/ShoeBox/issues"
+  },
+  "homepage": "https://github.com/Mwas1515/ShoeBox#readme",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}
