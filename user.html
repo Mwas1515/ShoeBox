@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    
+    <!-- Tailwind CSS -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-800 to-black min-h-screen">
+    <!-- STAR FIELD BACKGROUND -->
+
+    <div
+      class="fixed inset-0 pointer-events-none overflow-hidden select-none -z-10"
+    >
+      <!-- SMALL STARS -->
+
+      <div
+        class="absolute top-8 left-8 w-1 h-1 bg-white rounded-full opacity-70"
+      ></div>
+
+      <div
+        class="absolute top-20 right-28 w-0.5 h-0.5 bg-white rounded-full opacity-60"
+      ></div>
+
+      <div
+        class="absolute top-44 left-20 w-1 h-1 bg-white rounded-full opacity-80"
+      ></div>
+
+      <div
+        class="absolute top-52 right-12 w-0.5 h-0.5 bg-white rounded-full opacity-70"
+      ></div>
+
+      <div
+        class="absolute top-72 left-36 w-1 h-1 bg-white rounded-full opacity-70"
+      ></div>
+
+      <div
+        class="absolute top-96 right-36 w-0.5 h-0.5 bg-white rounded-full opacity-60"
+      ></div>
+
+      <div
+        class="absolute top-[400px] left-10 w-1 h-1 bg-white rounded-full opacity-80"
+      ></div>
+
+      <div
+        class="absolute top-[420px] right-16 w-0.5 h-0.5 bg-white rounded-full opacity-50"
+      ></div>
+
+      <div
+        class="absolute top-[480px] left-28 w-1 h-1 bg-white rounded-full opacity-75"
+      ></div>
+
+      <div
+        class="absolute top-[530px] right-32 w-1 h-1 bg-white rounded-full opacity-80"
+      ></div>
+
+      <div
+        class="absolute top-[590px] left-16 w-0.5 h-0.5 bg-white rounded-full opacity-60"
+      ></div>
+
+      <div
+        class="absolute bottom-12 left-24 w-1 h-1 bg-white rounded-full opacity-75"
+      ></div>
+
+      <div
+        class="absolute bottom-24 right-14 w-1 h-1 bg-white rounded-full opacity-80"
+      ></div>
+
+      <div
+        class="absolute bottom-40 left-12 w-0.5 h-0.5 bg-white rounded-full opacity-60"
+      ></div>
+
+      <div
+        class="absolute bottom-56 right-24 w-1 h-1 bg-white rounded-full opacity-70"
+      ></div>
+
+      <div
+        class="absolute bottom-72 left-32 w-0.5 h-0.5 bg-white rounded-full opacity-80"
+      ></div>
+
+      <!-- GLOWING STARS -->
+
+      <div
+        class="absolute top-16 right-10 w-1.5 h-1.5 bg-white rounded-full opacity-90 shadow-[0_0_8px_2px_rgba(255,255,255,0.7)]"
+      ></div>
+
+      <div
+        class="absolute top-32 left-14 w-1.5 h-1.5 bg-white rounded-full opacity-90 shadow-[0_0_8px_2px_rgba(255,255,255,0.7)]"
+      ></div>
+
+      <div
+        class="absolute top-80 right-20 w-1.5 h-1.5 bg-white rounded-full opacity-90 shadow-[0_0_8px_2px_rgba(255,255,255,0.7)]"
+      ></div>
+
+      <div
+        class="absolute top-[460px] right-8 w-1.5 h-1.5 bg-white rounded-full opacity-95 shadow-[0_0_8px_2px_rgba(255,255,255,0.7)]"
+      ></div>
+
+      <div
+        class="absolute bottom-32 left-8 w-1.5 h-1.5 bg-white rounded-full opacity-90 shadow-[0_0_8px_2px_rgba(255,255,255,0.7)]"
+      ></div>
+
+      <div
+        class="absolute bottom-64 right-12 w-1.5 h-1.5 bg-white rounded-full opacity-95 shadow-[0_0_8px_2px_rgba(255,255,255,0.7)]"
+      ></div>
+
+      <!-- PULSING STARS -->
+
+      <div
+        class="absolute top-24 left-44 w-1.5 h-1.5 bg-white rounded-full opacity-100 animate-pulse shadow-[0_0_10px_3px_rgba(255,255,255,0.8)]"
+      ></div>
+
+      <div
+        class="absolute top-[350px] left-24 w-1 h-1 bg-white rounded-full opacity-90 animate-pulse shadow-[0_0_6px_2px_rgba(255,255,255,0.5)]"
+      ></div>
+
+      <div
+        class="absolute bottom-16 left-40 w-1.5 h-1.5 bg-white rounded-full opacity-100 animate-pulse shadow-[0_0_10px_3px_rgba(255,255,255,0.8)]"
+      ></div>
+
+      <div
+        class="absolute bottom-48 right-28 w-1 h-1 bg-white rounded-full opacity-90 animate-pulse shadow-[0_0_6px_2px_rgba(255,255,255,0.5)]"
+      ></div>
+    </div>
+
+    <div class="mt-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-[40px] p-6 shadow-lg flex justify-center items-center w-full max-w-2xl mx-auto">
+            <div class="text-center pt-12">
+      <h1 class="text-white text-5xl font-bold tracking-widest uppercase">
+        ShoeBox
+      </h1>
+      <h2 class="text-white text-2xl font-semibold mt-8 mb-6">
+  Login
+</h2>
+
+<form id="loginForm" class="flex flex-col gap-4 w-80">
+
+  <input
+    type="email"
+    id="email"
+    placeholder="Enter Email"
+    required
+    class="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-300 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/30 transition"
+  >
+
+  <input
+    type="password"
+    id="password"
+    placeholder="Enter Password"
+    required
+    class="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-300 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/30 transition"
+  >
+  <div class="flex items-center gap-2 text-white text-sm">
+    <input
+        type="checkbox"
+        id="showPassword"
+        class="cursor-pointer"
+    >
+    <label for="showPassword">
+        Show Password
+    </label>
+</div>
+
+  <button
+    type="submit"
+    class="bg-white text-black font-semibold py-3 rounded-xl hover:bg-gray-200 transition duration-300 cursor-pointer"
+  >
+    Login
+  </button>
+
+</form>
+
+<p
+  id="message"
+  class="mt-4 text-center text-white font-medium"
+></p>
+<p class="text-gray-300 text-sm text-center mt-2">
+  Don't have an account?
+  <a
+    href="register.html"
+    class="text-blue-400 hover:text-blue-300 font-semibold"
+  >
+    Create Account
+  </a>
+</p>
+    </div>
+    <script src="user.js"></script>
+</body>
+</html>
