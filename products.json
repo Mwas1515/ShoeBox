@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "Air Force 1",
+    "brand": "Nike",
+    "category": "Men",
+    "price": 2500,
+    "image": "assets/images/AF-1.jpg",
+    "stock": 30,
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Nike Cortez",
+    "brand": "Nike",
+    "category": "Men",
+    "price": 4500,
+    "image": "assets/images/CORTEZ.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 3,
+    "name": "Vans Old Skool",
+    "brand": "Vans",
+    "category": "Men",
+    "price": 3500,
+    "image": "assets/images/VANS.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 4,
+    "name": "Nike Dunks Low",
+    "brand": "Nike",
+    "category": "Men",
+    "price": 5500,
+    "image": "assets/images/DUNKS-LOW.jpg",
+    "stock": 30,
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Jordan 4",
+    "brand": "Jordan",
+    "category": "Men",
+    "price": 6500,
+    "image": "assets/images/J4.jpg",
+    "stock": 30,
+    "featured": true
+  },
+  {
+    "id": 6,
+    "name": "Puma Suede",
+    "brand": "Puma",
+    "category": "Men",
+    "price": 3000,
+    "image": "assets/images/PUMA-SUEDE.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 7,
+    "name": "Timberlands",
+    "brand": "Timberland",
+    "category": "Men",
+    "price": 7500,
+    "image": "assets/images/TIMBZ.jpg",
+    "stock": 30,
+    "featured": true
+  },
+  {
+    "id": 8,
+    "name": "Nike Dunks High",
+    "brand": "Nike",
+    "category": "Men",
+    "price": 8500,
+    "image": "assets/images/DUNKS-HIGH.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 9,
+    "name": "Nike Air Max",
+    "brand": "Nike",
+    "category": "Women",
+    "price": 4500,
+    "image": "assets/images/AIRMAX.jpg",
+    "stock": 30,
+    "featured": true
+  },
+  {
+    "id": 10,
+    "name": "Nike Airforce-1 Pink",
+    "brand": "Nike",
+    "category": "Women",
+    "price": 2500,
+    "image": "assets/images/PINK AF-1.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 11,
+    "name": "Converse Old Skool",
+    "brand": "Converse",
+    "category": "Women",
+    "price": 2000,
+    "image": "assets/images/OLDSKOOL.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 12,
+    "name": "Fila",
+    "brand": "Fila",
+    "category": "Women",
+    "price": 3500,
+    "image": "assets/images/FILA.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 13,
+    "name": "New Balance 550",
+    "brand": "New Balance",
+    "category": "Women",
+    "price": 4500,
+    "image": "assets/images/NB-550.jpg",
+    "stock": 30,
+    "featured": true
+  },
+  {
+    "id": 14,
+    "name": "Puma-F2",
+    "brand": "Puma",
+    "category": "Women",
+    "price": 3000,
+    "image": "assets/images/PUMA F2.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 15,
+    "name": "ASICS Gel Kayano 14",
+    "brand": "ASICS",
+    "category": "Women",
+    "price": 4500,
+    "image": "assets/images/ASICIS.jpg",
+    "stock": 30,
+    "featured": true
+  },
+  {
+    "id": 16,
+    "name": "Nike Dunks High",
+    "brand": "Nike",
+    "category": "Women",
+    "price": 8500,
+    "image": "assets/images/DUNKS HIGH W.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 17,
+    "name": "Air Force 1 Graffiti",
+    "brand": "Nike",
+    "category": "Kids",
+    "price": 2500,
+    "image": "assets/images/AF-1 GRAFFITY.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 18,
+    "name": "Adidas Rubbers",
+    "brand": "Adidas",
+    "category": "Kids",
+    "price": 1500,
+    "image": "assets/images/ADDIDAS.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 19,
+    "name": "Airmax Colored",
+    "brand": "Nike",
+    "category": "Kids",
+    "price": 3500,
+    "image": "assets/images/AIR MAX COLORED.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 20,
+    "name": "Converse Allstar",
+    "brand": "Converse",
+    "category": "Kids",
+    "price": 3000,
+    "image": "assets/images/ALLSTARS.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 21,
+    "name": "Jordan 12",
+    "brand": "Jordan",
+    "category": "Kids",
+    "price": 4500,
+    "image": "assets/images/JORDAN-12.jpg",
+    "stock": 30,
+    "featured": true
+  },
+  {
+    "id": 22,
+    "name": "Nike Offwhite Dunks High",
+    "brand": "Nike",
+    "category": "Kids",
+    "price": 5000,
+    "image": "assets/images/DUNKS OFFWHITE.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 23,
+    "name": "Nike Sacai",
+    "brand": "Nike",
+    "category": "Kids",
+    "price": 4000,
+    "image": "assets/images/SACAI.jpg",
+    "stock": 30,
+    "featured": false
+  },
+  {
+    "id": 24,
+    "name": "Adidas Yeezy 700",
+    "brand": "Adidas",
+    "category": "Kids",
+    "price": 5500,
+    "image": "assets/images/YEEZY.jpg",
+    "stock": 30,
+    "featured": true
+  }
+]

@@ -18,7 +18,7 @@
     ></script>
   </head>
 
-  <body class="bg-gradient-to-br from-gray-800 to-black min-h-screen">
+  <body data-category="Women" class="bg-gradient-to-br from-gray-800 to-black min-h-screen">
     <!-- STAR FIELD BACKGROUND -->
 
     <div
@@ -165,298 +165,64 @@
       </p>
     </div>
 
-    <!-- SHOES GRID -->
+<!-- FILTERS -->
 
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6 mt-16 pb-16"
-    >
-      <!-- CARD 1 -->
+<div class="max-w-7xl mx-auto px-6 mt-10">
 
-      <div
-        class="cart-btn bg-white/10 backdrop-blur-md border border-white/20 rounded-[40px] p-6 shadow-lg hover:scale-105 transition-all duration-300"
-      >
-        <img
-          src="assets/images/AIRMAX.jpg"
-          alt="Nike Air Max"
-          class="w-full h-60 object-cover rounded-2xl hover:scale-110 transition-all duration-300 cursor-pointer"
-        />
+    <div class="grid md:grid-cols-4 gap-4">
 
-        <h2 class="text-white text-xl font-bold mt-4">Nike Air Max</h2>
-          
-        <!-- STARS -->
+        <!-- SEARCH -->
 
-    <div class="text-yellow-400 text-lg mt-2">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search shoes..."
+            class="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white"
+        >
 
-        ⭐ ⭐ ⭐ ⭐ ⭐
+        <!-- CATEGORY -->
 
-    </div>
+        <select
+            id="categoryFilter"
+            class="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white"
+        >
+            <option value="All">All Categories</option>
+            <option value="Men">Men</option>
+            <option value="Women">Women</option>
+            <option value="Kids">Kids</option>
+        </select>
 
-        <p class="text-gray-300 mt-2 font-semibold">Ksh 4,500</p>
-        
-              
-        <!-- CART BUTTON -->
+        <!-- BRAND -->
 
-        <button
-        class="w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
-         data-id="9">
+        <select
+            id="brandFilter"
+            class="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white"
+        >
+            <option value="All">All Brands</option>
+        </select>
 
-            <i class="fa-solid fa-cart-arrow-down"></i>
+        <!-- PRICE -->
 
-        </button>
-        
-      </div>
-
-      <!-- CARD 2 -->
-
-      <div
-        class="bg-white/10 backdrop-blur-md border border-white/20 rounded-[40px] p-6 shadow-lg hover:scale-105 transition-all duration-300"
-      >
-        <img
-          src="assets/images/PINK AF-1.jpg"
-          alt="Nike Airforce-1 Pink"
-          class="w-full h-60 object-cover rounded-2xl hover:scale-110 transition-all duration-300 cursor-pointer"
-        />
-
-        <h2 class="text-white text-xl font-bold mt-4">Nike Airforce-1 Pink</h2>
-          
-        <!-- STARS -->
-
-    <div class="text-yellow-400 text-lg mt-2">
-
-        ⭐ ⭐ ⭐ ⭐ ⭐
+        <select
+            id="priceFilter"
+            class="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white"
+        >
+            <option value="default">Sort By Price</option>
+            <option value="low-high">Low → High</option>
+            <option value="high-low">High → Low</option>
+        </select>
 
     </div>
 
-        <p class="text-gray-300 mt-2 font-semibold">Ksh 2,500</p>
-        
-              
-        <!-- CART BUTTON -->
+</div>
 
-        <button
-        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
-         data-id="10">
+<!-- PRODUCTS GRID -->
 
-            <i class="fa-solid fa-cart-arrow-down"></i>
+<div
+    id="productsContainer"
+    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6 mt-12 pb-16"
+></div>
 
-        </button>
-        
-      </div>
-
-      <!-- CARD 3 -->
-
-      <div
-        class="bg-white/10 backdrop-blur-md border border-white/20 rounded-[40px] p-6 shadow-lg hover:scale-105 transition-all duration-300"
-      >
-        <img
-          src="assets/images/OLDSKOOL.jpg"
-          alt="Converse Old Skool"
-          class="w-full h-60 object-cover rounded-2xl hover:scale-110 transition-all duration-300 cursor-pointer"
-        />
-
-        <h2 class="text-white text-xl font-bold mt-4">Converse Old Skool</h2>
-          
-        <!-- STARS -->
-
-    <div class="text-yellow-400 text-lg mt-2">
-
-        ⭐ ⭐ ⭐ ⭐ ⭐
-
-    </div>
-
-        <p class="text-gray-300 mt-2 font-semibold">Ksh 2,000</p>
-        
-              
-        <!-- CART BUTTON -->
-
-        <button
-        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
-         data-id="11">
-
-            <i class="fa-solid fa-cart-arrow-down"></i>
-
-        </button>
-        
-      </div>
-
-      <!-- CARD 4 -->
-
-      <div
-        class="bg-white/10 backdrop-blur-md border border-white/20 rounded-[40px] p-6 shadow-lg hover:scale-105 transition-all duration-300"
-      >
-        <img
-          src="assets/images/FILA.jpg"
-          alt="Fila"
-          class="w-full h-60 object-cover rounded-2xl hover:scale-110 transition-all duration-300 cursor-pointer"
-        />
-
-        <h2 class="text-white text-xl font-bold mt-4">Fila</h2>
-        
-        <!-- STARS -->
-
-    <div class="text-yellow-400 text-lg mt-2">
-
-        ⭐ ⭐ ⭐ ⭐ ⭐
-
-    </div>
-
-        <p class="text-gray-300 mt-2 font-semibold">Ksh 3,500</p>
-        
-              
-        <!-- CART BUTTON -->
-
-        <button
-        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
-         data-id="12">
-
-            <i class="fa-solid fa-cart-arrow-down"></i>
-
-        </button>
-        
-      </div>
-
-      <!-- CARD 5 -->
-
-      <div
-        class="bg-white/10 backdrop-blur-md border border-white/20 rounded-[40px] p-6 shadow-lg hover:scale-105 transition-all duration-300"
-      >
-        <img
-          src="assets/images/NB-550.jpg"
-          alt="New Balance-550"
-          class="w-full h-60 object-cover rounded-2xl hover:scale-110 transition-all duration-300 cursor-pointer"
-        />
-
-        <h2 class="text-white text-xl font-bold mt-4">New Balance-550</h2>
-          
-        <!-- STARS -->
-
-    <div class="text-yellow-400 text-lg mt-2">
-
-        ⭐ ⭐ ⭐ ⭐ ⭐
-
-    </div>
-
-        <p class="text-gray-300 mt-2 font-semibold">Ksh 4,500</p>
-        
-              
-        <!-- CART BUTTON -->
-
-        <button
-        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
-         data-id="13">
-
-            <i class="fa-solid fa-cart-arrow-down"></i>
-
-        </button>
-        
-      </div>
-
-      <!-- CARD 6 -->
-
-      <div
-        class="bg-white/10 backdrop-blur-md border border-white/20 rounded-[40px] p-6 shadow-lg hover:scale-105 transition-all duration-300"
-      >
-        <img
-          src="assets/images/PUMA F2.jpg"
-          alt="Puma-F2"
-          class="w-full h-60 object-cover rounded-2xl hover:scale-110 transition-all duration-300 cursor-pointer"
-        />
-
-        <h2 class="text-white text-xl font-bold mt-4">Puma-F2</h2>
-          
-        <!-- STARS -->
-
-    <div class="text-yellow-400 text-lg mt-2">
-
-        ⭐ ⭐ ⭐ ⭐ ⭐
-
-    </div>
-
-        <p class="text-gray-300 mt-2 font-semibold">Ksh 3,000</p>
-        
-              
-        <!-- CART BUTTON -->
-
-        <button
-        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
-         data-id="14">
-
-            <i class="fa-solid fa-cart-arrow-down"></i>
-
-        </button>
-        
-      </div>
-
-      <!-- CARD 7 -->
-
-      <div
-        class="bg-white/10 backdrop-blur-md border border-white/20 rounded-[40px] p-6 shadow-lg hover:scale-105 transition-all duration-300"
-      >
-        <img
-          src="assets/images/ASICIS.jpg"
-          alt="ASICS Gel Kayano 14"
-          class="w-full h-60 object-cover rounded-2xl hover:scale-110 transition-all duration-300 cursor-pointer"
-        />
-
-        <h2 class="text-white text-xl font-bold mt-4">ASICS Gel Kayano 14</h2>
-          
-        <!-- STARS -->
-
-    <div class="text-yellow-400 text-lg mt-2">
-
-        ⭐ ⭐ ⭐ ⭐ ⭐
-
-    </div>
-
-        <p class="text-gray-300 mt-2 font-semibold">Ksh 4,500</p>
-        
-              
-        <!-- CART BUTTON -->
-
-        <button
-        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
-         data-id="15">
-
-            <i class="fa-solid fa-cart-arrow-down"></i>
-
-        </button>
-        
-      </div>
-
-      <!-- CARD 8 -->
-
-      <div
-        class="bg-white/10 backdrop-blur-md border border-white/20 rounded-[40px] p-6 shadow-lg hover:scale-105 transition-all duration-300"
-      >
-        <img
-          src="assets/images/DUNKS HIGH W.jpg"
-          alt="Nike Dunks High"
-          class="w-full h-60 object-cover rounded-2xl hover:scale-110 transition-all duration-300 cursor-pointer"
-        />
-
-        <h2 class="text-white text-xl font-bold mt-4">Nike Dunks High</h2>
-          
-        <!-- STARS -->
-
-    <div class="text-yellow-400 text-lg mt-2">
-
-        ⭐ ⭐ ⭐ ⭐ ⭐
-
-    </div>
-
-        <p class="text-gray-300 mt-2 font-semibold">Ksh 8,500</p>
-
-              
-        <!-- CART BUTTON -->
-
-        <button
-        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
-         data-id="16">
-
-            <i class="fa-solid fa-cart-arrow-down"></i>
-
-        </button>
-      </div>
-    </div>
 
     <!--BUTTONS-->
 
