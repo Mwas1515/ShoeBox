@@ -135,6 +135,24 @@
       ></div>
     </div>
 
+    <!--NAVIGATION BAR-->
+    <div class="fixed top-5 right-5 z-50">
+    <button
+        id="viewCartBtn"
+        class="relative flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white px-5 py-3 rounded-full font-semibold shadow-lg hover:bg-white/20 hover:scale-105 transition-all duration-300"
+    >
+        <i class="fa-solid fa-cart-arrow-down text-lg"></i>
+        <span>View Cart</span>
+
+        <span
+            id="cartCount"
+            class="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-bold"
+        >
+            0
+        </span>
+    </button>
+</div>
+
     <!--PAGE TITLE-->
 
     <div class="text-center pt-12">
@@ -179,7 +197,8 @@
         <!-- CART BUTTON -->
 
         <button
-        class="w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all ">
+        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
+         data-id="1">
 
             <i class="fa-solid fa-cart-arrow-down"></i>
 
@@ -214,7 +233,8 @@
         <!-- CART BUTTON -->
 
         <button
-        class="w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all ">
+        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
+         data-id="2">
 
             <i class="fa-solid fa-cart-arrow-down"></i>
 
@@ -249,7 +269,8 @@
         <!-- CART BUTTON -->
 
         <button
-        class="w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all ">
+        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
+         data-id="3">
 
             <i class="fa-solid fa-cart-arrow-down"></i>
 
@@ -284,7 +305,8 @@
         <!-- CART BUTTON -->
 
         <button
-        class="w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all ">
+        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
+         data-id="4">
 
             <i class="fa-solid fa-cart-arrow-down"></i>
 
@@ -319,7 +341,8 @@
         <!-- CART BUTTON -->
 
         <button
-        class="w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all ">
+        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
+         data-id="5">
 
             <i class="fa-solid fa-cart-arrow-down"></i>
 
@@ -354,7 +377,8 @@
         <!-- CART BUTTON -->
 
         <button
-        class="w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all ">
+        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
+         data-id="6">
 
             <i class="fa-solid fa-cart-arrow-down"></i>
 
@@ -389,7 +413,8 @@
         <!-- CART BUTTON -->
 
         <button
-        class="w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all ">
+        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
+         data-id="7">
 
             <i class="fa-solid fa-cart-arrow-down"></i>
 
@@ -424,7 +449,8 @@
         <!-- CART BUTTON -->
 
         <button
-        class="w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all ">
+        class="cart-btn w-full flex justify-center mt-7 pr-2 bg-white text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-gray-300 tracking-widest transition-all"
+         data-id="8">
 
             <i class="fa-solid fa-cart-arrow-down"></i>
 
@@ -555,5 +581,69 @@
         <p>&copy;2026 ShoeBox. All rights reserved.</p>
       </div>
     </footer>
+<!-- CART DRAWER -->
+<div
+    id="cartDrawer"
+    class="fixed top-0 left-0 w-full min-h-[400px] bg-black/95 backdrop-blur-md border-b border-white/20 shadow-2xl transform -translate-y-full transition-transform duration-500 ease-in-out z-[9998]"
+>
+    <div class="max-w-5xl mx-auto p-6">
+
+        <!-- HEADER -->
+        <div class="flex justify-between items-center border-b border-white/20 pb-4">
+            <h2 class="text-white text-3xl font-bold tracking-wider uppercase">
+                Shopping Cart
+            </h2>
+
+            <button
+                id="closeCartBtn"
+                class="text-white text-3xl hover:text-red-500 transition"
+            >
+                &times;
+            </button>
+        </div>
+
+        <!-- ITEMS -->
+        <div
+            id="cartItems"
+            class="mt-6 space-y-4 max-h-[400px] overflow-y-auto"
+        >
+        </div>
+
+        <!-- TOTAL -->
+        <div class="mt-6 border-t border-white/20 pt-6">
+
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-white text-2xl font-bold">
+                    Total:
+                </h3>
+
+                <span
+                    id="cartTotal"
+                    class="text-green-400 text-2xl font-bold"
+                >
+                    Ksh 0
+                </span>
+            </div>
+
+            <a
+    href="cart.html"
+    class="block text-center bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-xl font-bold mb-4"
+>
+    Open Full Cart
+</a>
+
+            <button
+                id="checkoutBtn"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-4 rounded-2xl font-bold text-lg uppercase tracking-wider transition-all"
+            >
+                Proceed To Checkout
+            </button>
+
+        </div>
+
+    </div>
+</div>
+    <script src="products.js"></script>
+    <script src="shoppingCart.js"></script>
   </body>
 </html>
