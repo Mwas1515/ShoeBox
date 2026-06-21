@@ -3,60 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
-        <!-- Tailwind CSS -->
+    <title>ShoeBox | Shopping Cart</title>
 
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- Font Awesome -->
+    <script
+        src="https://kit.fontawesome.com/84ff9154d2.js"
+        crossorigin="anonymous">
+    </script>
 </head>
-<body>
+
 <body class="bg-gradient-to-br from-gray-800 to-black min-h-screen text-white">
 
-    <div class="max-w-5xl mx-auto p-8">
+    <div class="max-w-6xl mx-auto p-6 md:p-10">
 
-        <h1 class="text-5xl font-bold text-center mb-10">
-            Shopping Cart
-        </h1>
+        <!-- HEADER -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-10">
 
+            <h1 class="text-4xl md:text-5xl font-bold tracking-wider">
+                Shopping Cart
+            </h1>
+
+            <span
+                id="cartCount"
+                class="bg-red-500 px-5 py-2 rounded-full font-bold shadow-lg"
+            >
+                0 Items
+            </span>
+
+        </div>
+
+        <!-- BACK BUTTON -->
+        <div class="mb-8">
+
+            <a
+                href="index.html"
+                class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-full font-semibold hover:bg-white/20 transition-all duration-300"
+            >
+                <i class="fa-solid fa-arrow-left"></i>
+                Back To Shop
+            </a>
+
+        </div>
+
+        <!-- CART ITEMS -->
         <div
             id="cartItems"
-            class="space-y-4"
+            class="space-y-5"
         >
+            <!-- Products inserted by JavaScript -->
         </div>
 
+        <!-- CART SUMMARY -->
         <div
-            class="mt-8 border-t border-white/20 pt-6 flex justify-between items-center"
+            class="mt-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-xl"
         >
-            <h2
-                id="cartTotal"
-                class="text-3xl font-bold"
-            >
-                Total: Ksh 0
-            </h2>
 
+            <!-- SUBTOTAL -->
+            <div class="flex justify-between text-lg mb-4">
+
+                <span>Subtotal</span>
+
+                <span id="cartSubtotal">
+                    Ksh 0
+                </span>
+
+            </div>
+
+            <!-- DELIVERY -->
+            <div class="flex justify-between text-lg mb-4">
+
+                <span>Delivery Fee</span>
+
+                <span id="deliveryFee">
+                    Ksh 300
+                </span>
+
+            </div>
+
+            <!-- TOTAL -->
+            <div
+                class="flex justify-between items-center border-t border-white/20 pt-5 text-2xl md:text-3xl font-bold"
+            >
+
+                <span>Total</span>
+
+                <span
+                    id="cartTotal"
+                    class="text-green-400"
+                >
+                    Ksh 0
+                </span>
+
+            </div>
+
+            <!-- CHECKOUT BUTTON -->
             <button
                 id="checkoutBtn"
-                class="bg-green-500 hover:bg-green-600 px-8 py-3 rounded-xl font-bold"
+                class="w-full mt-8 bg-green-500 hover:bg-green-600 text-white py-4 rounded-2xl font-bold text-lg uppercase tracking-wider transition-all duration-300"
             >
-                Checkout
+                Proceed To Checkout
             </button>
-        </div>
 
-        <div class="mb-8">
-    <a
-        href="index.html"
-        class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-white/20 transition-all duration-300"
-    >
-        <i class="fa-solid fa-arrow-left"></i>
-        <span>Back to Shop</span>
-    </a>
-</div>
+        </div>
 
     </div>
 
     <script src="shoppingCart.js"></script>
-
-</body>
 
 </body>
 </html>
